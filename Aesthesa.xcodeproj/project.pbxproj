@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C890C75F2B21437600D1E195 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C890C75E2B21437600D1E195 /* AppDelegate.swift */; };
+		C890C7612B21437600D1E195 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C890C7602B21437600D1E195 /* ContentView.swift */; };
+		C890C7632B21437800D1E195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C890C7622B21437800D1E195 /* Assets.xcassets */; };
+		C890C7662B21437800D1E195 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C890C7652B21437800D1E195 /* Preview Assets.xcassets */; };
+		C890C7702B21437800D1E195 /* AesthesaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C890C76F2B21437800D1E195 /* AesthesaTests.swift */; };
+		C890C77A2B21437800D1E195 /* AesthesaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C890C7792B21437800D1E195 /* AesthesaUITests.swift */; };
+		C890C77C2B21437800D1E195 /* AesthesaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C890C77B2B21437800D1E195 /* AesthesaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C890C76C2B21437800D1E195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C890C7532B21437600D1E195 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C890C75A2B21437600D1E195;
+			remoteInfo = Aesthesa;
+		};
+		C890C7762B21437800D1E195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C890C7532B21437600D1E195 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C890C75A2B21437600D1E195;
+			remoteInfo = Aesthesa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C890C75B2B21437600D1E195 /* Aesthesa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aesthesa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C890C75E2B21437600D1E195 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C890C7602B21437600D1E195 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C890C7622B21437800D1E195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C890C7652B21437800D1E195 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C890C76B2B21437800D1E195 /* AesthesaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AesthesaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C890C76F2B21437800D1E195 /* AesthesaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AesthesaTests.swift; sourceTree = "<group>"; };
+		C890C7752B21437800D1E195 /* AesthesaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AesthesaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C890C7792B21437800D1E195 /* AesthesaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AesthesaUITests.swift; sourceTree = "<group>"; };
+		C890C77B2B21437800D1E195 /* AesthesaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AesthesaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C890C7582B21437600D1E195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C890C7682B21437800D1E195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C890C7722B21437800D1E195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C890C7522B21437600D1E195 = {
+			isa = PBXGroup;
+			children = (
+				C890C75D2B21437600D1E195 /* Aesthesa */,
+				C890C76E2B21437800D1E195 /* AesthesaTests */,
+				C890C7782B21437800D1E195 /* AesthesaUITests */,
+				C890C75C2B21437600D1E195 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C890C75C2B21437600D1E195 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C890C75B2B21437600D1E195 /* Aesthesa.app */,
+				C890C76B2B21437800D1E195 /* AesthesaTests.xctest */,
+				C890C7752B21437800D1E195 /* AesthesaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C890C75D2B21437600D1E195 /* Aesthesa */ = {
+			isa = PBXGroup;
+			children = (
+				C890C75E2B21437600D1E195 /* AppDelegate.swift */,
+				C890C7602B21437600D1E195 /* ContentView.swift */,
+				C890C7622B21437800D1E195 /* Assets.xcassets */,
+				C890C7642B21437800D1E195 /* Preview Content */,
+			);
+			path = Aesthesa;
+			sourceTree = "<group>";
+		};
+		C890C7642B21437800D1E195 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C890C7652B21437800D1E195 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C890C76E2B21437800D1E195 /* AesthesaTests */ = {
+			isa = PBXGroup;
+			children = (
+				C890C76F2B21437800D1E195 /* AesthesaTests.swift */,
+			);
+			path = AesthesaTests;
+			sourceTree = "<group>";
+		};
+		C890C7782B21437800D1E195 /* AesthesaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C890C7792B21437800D1E195 /* AesthesaUITests.swift */,
+				C890C77B2B21437800D1E195 /* AesthesaUITestsLaunchTests.swift */,
+			);
+			path = AesthesaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C890C75A2B21437600D1E195 /* Aesthesa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C890C77F2B21437800D1E195 /* Build configuration list for PBXNativeTarget "Aesthesa" */;
+			buildPhases = (
+				C890C7572B21437600D1E195 /* Sources */,
+				C890C7582B21437600D1E195 /* Frameworks */,
+				C890C7592B21437600D1E195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aesthesa;
+			productName = Aesthesa;
+			productReference = C890C75B2B21437600D1E195 /* Aesthesa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C890C76A2B21437800D1E195 /* AesthesaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C890C7822B21437800D1E195 /* Build configuration list for PBXNativeTarget "AesthesaTests" */;
+			buildPhases = (
+				C890C7672B21437800D1E195 /* Sources */,
+				C890C7682B21437800D1E195 /* Frameworks */,
+				C890C7692B21437800D1E195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C890C76D2B21437800D1E195 /* PBXTargetDependency */,
+			);
+			name = AesthesaTests;
+			productName = AesthesaTests;
+			productReference = C890C76B2B21437800D1E195 /* AesthesaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C890C7742B21437800D1E195 /* AesthesaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C890C7852B21437800D1E195 /* Build configuration list for PBXNativeTarget "AesthesaUITests" */;
+			buildPhases = (
+				C890C7712B21437800D1E195 /* Sources */,
+				C890C7722B21437800D1E195 /* Frameworks */,
+				C890C7732B21437800D1E195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C890C7772B21437800D1E195 /* PBXTargetDependency */,
+			);
+			name = AesthesaUITests;
+			productName = AesthesaUITests;
+			productReference = C890C7752B21437800D1E195 /* AesthesaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C890C7532B21437600D1E195 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					C890C75A2B21437600D1E195 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					C890C76A2B21437800D1E195 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = C890C75A2B21437600D1E195;
+					};
+					C890C7742B21437800D1E195 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = C890C75A2B21437600D1E195;
+					};
+				};
+			};
+			buildConfigurationList = C890C7562B21437600D1E195 /* Build configuration list for PBXProject "Aesthesa" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C890C7522B21437600D1E195;
+			productRefGroup = C890C75C2B21437600D1E195 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C890C75A2B21437600D1E195 /* Aesthesa */,
+				C890C76A2B21437800D1E195 /* AesthesaTests */,
+				C890C7742B21437800D1E195 /* AesthesaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C890C7592B21437600D1E195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C890C7662B21437800D1E195 /* Preview Assets.xcassets in Resources */,
+				C890C7632B21437800D1E195 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C890C7692B21437800D1E195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C890C7732B21437800D1E195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C890C7572B21437600D1E195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C890C7612B21437600D1E195 /* ContentView.swift in Sources */,
+				C890C75F2B21437600D1E195 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C890C7672B21437800D1E195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C890C7702B21437800D1E195 /* AesthesaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C890C7712B21437800D1E195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C890C77C2B21437800D1E195 /* AesthesaUITestsLaunchTests.swift in Sources */,
+				C890C77A2B21437800D1E195 /* AesthesaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C890C76D2B21437800D1E195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C890C75A2B21437600D1E195 /* Aesthesa */;
+			targetProxy = C890C76C2B21437800D1E195 /* PBXContainerItemProxy */;
+		};
+		C890C7772B21437800D1E195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C890C75A2B21437600D1E195 /* Aesthesa */;
+			targetProxy = C890C7762B21437800D1E195 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C890C77D2B21437800D1E195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C890C77E2B21437800D1E195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C890C7802B21437800D1E195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Aesthesa/Preview Content\"";
+				DEVELOPMENT_TEAM = M369CV6CKG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FloOoDs.Aesthesa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C890C7812B21437800D1E195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Aesthesa/Preview Content\"";
+				DEVELOPMENT_TEAM = M369CV6CKG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FloOoDs.Aesthesa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C890C7832B21437800D1E195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M369CV6CKG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FloOoDs.AesthesaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aesthesa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Aesthesa";
+			};
+			name = Debug;
+		};
+		C890C7842B21437800D1E195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M369CV6CKG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FloOoDs.AesthesaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aesthesa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Aesthesa";
+			};
+			name = Release;
+		};
+		C890C7862B21437800D1E195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M369CV6CKG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FloOoDs.AesthesaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Aesthesa;
+			};
+			name = Debug;
+		};
+		C890C7872B21437800D1E195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M369CV6CKG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FloOoDs.AesthesaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Aesthesa;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C890C7562B21437600D1E195 /* Build configuration list for PBXProject "Aesthesa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C890C77D2B21437800D1E195 /* Debug */,
+				C890C77E2B21437800D1E195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C890C77F2B21437800D1E195 /* Build configuration list for PBXNativeTarget "Aesthesa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C890C7802B21437800D1E195 /* Debug */,
+				C890C7812B21437800D1E195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C890C7822B21437800D1E195 /* Build configuration list for PBXNativeTarget "AesthesaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C890C7832B21437800D1E195 /* Debug */,
+				C890C7842B21437800D1E195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C890C7852B21437800D1E195 /* Build configuration list for PBXNativeTarget "AesthesaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C890C7862B21437800D1E195 /* Debug */,
+				C890C7872B21437800D1E195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C890C7532B21437600D1E195 /* Project object */;
+}
