@@ -1,8 +1,18 @@
+
 //
 //  Main.swift
-//  Aesthesa
-//
-//  Created by Grant Williams on 12/6/23.
 //
 
-import Foundation
+import SwiftUI
+
+@main
+// Defines structure of App's UI
+struct Aesthetic: App {
+    var body: some Scene {
+        WindowGroup {
+            
+            ContentView()
+            
+        }
+    }
+}

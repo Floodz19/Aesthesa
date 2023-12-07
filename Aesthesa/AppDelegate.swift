@@ -1,49 +1,97 @@
+
 //
 //  AppDelegate.swift
-//  Aesthesa
-//
-//  Created by Grant Williams on 12/6/23.
 //
 
-import UIKit
+// AppDelegate not in use [AppDelegate.swift --> ARView.swift]
+// Saved AppDelegate for Canthal Tilt Calculator
+
+
 import SwiftUI
+import ARKit
 
-@main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+struct AppDelegate: UIViewRepresentable {
+    // ARSCNView Delegate
+    class Coordinator: NSObject, ARSCNViewDelegate {
+        
+        var faceNode: SCNNode?
 
-    var window: UIWindow?
+        func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
+            guard let faceAnchor = anchor as? ARFaceAnchor else { return }
+
+            if faceNode == nil {
+                // Render facial geometry once
+                let faceGeometry = ARSCNFaceGeometry(device: renderer.device!)
+                faceNode = SCNNode(geometry: faceGeometry)
+                node.addChildNode(faceNode!)
+            }
+
+            // Update face geometry
+            faceNode?.geometry?.firstMaterial?.fillMode = .lines
+            faceNode?.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
+
+            if let faceGeometry = faceNode?.geometry as? ARSCNFaceGeometry {
+                // Lines for face mesh
+                faceGeometry.firstMaterial?.fillMode = .lines
+                //  Material color
+                faceGeometry.firstMaterial?.diffuse.contents = UIColor.blue
+                faceGeometry.update(from: faceAnchor.geometry)
+            }
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+            // Call canthal tilt calculation
+            // Needs work
+            let canthalTilt = calculateCanthalTilt(from: faceAnchor)
+            print("Canthal Tilt: \(canthalTilt)")
+        }
 
-        // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        
+        func calculateCanthalTilt(from faceAnchor: ARFaceAnchor) -> Float {
+            
+            // based on the blend shapes of the left and right eyes.
+            
+                    guard let leftEyeInner = faceAnchor.blendShapes[.eyeBlinkLeft]?.floatValue,
+                          let leftEyeOuter = faceAnchor.blendShapes[.eyeBlinkLeft]?.floatValue,
+                          let rightEyeInner = faceAnchor.blendShapes[.eyeBlinkRight]?.floatValue,
+                          let rightEyeOuter = faceAnchor.blendShapes[.eyeBlinkRight]?.floatValue else {
+                        return 0.0
+                    }
 
-        // Use a UIHostingController as window root view controller.
-        let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = UIHostingController(rootView: contentView)
-        self.window = window
-        window.makeKeyAndVisible()
-        return true
+                    // Values need ajusted
+            
+                    // Trying to determine canthal tilt [in degrees] with vector operations and dot product calculation
+                    
+                    // Vectors for the inner and outer corners of both eyes
+                    let leftEyeVector = SCNVector3(leftEyeOuter - leftEyeInner, 0.0, 0.0)
+                    let rightEyeVector = SCNVector3(rightEyeOuter - rightEyeInner, 0.0, 0.0)
+            
+                    let dotProduct = leftEyeVector.x * rightEyeVector.x
+                    let leftMagnitude = sqrt(pow(leftEyeVector.x, 2))
+                    let rightMagnitude = sqrt(pow(rightEyeVector.x, 2))
+                    let canthalTiltRadians = acos(dotProduct / (leftMagnitude * rightMagnitude))
+                    let canthalTiltDegrees = canthalTiltRadians * (180.0 / .pi)
+
+            
+                    return canthalTiltDegrees
+                }
     }
 
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    
+    func makeUIView(context: Context) -> ARSCNView {
+        let arView = ARSCNView()
+        arView.delegate = context.coordinator
+        arView.backgroundColor = UIColor.lightGray
+        return arView
     }
 
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+    // Runs an ARFaceTracking session when ARSCNView is updated
+    func updateUIView(_ uiView: ARSCNView, context: Context) {
+        let configuration = ARFaceTrackingConfiguration()
+        uiView.session.run(configuration)
     }
 
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    func makeCoordinator() -> Coordinator {
+        return Coordinator()
     }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-
 }
 
